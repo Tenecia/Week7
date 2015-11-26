@@ -21,13 +21,13 @@
     <section class="main-content">
       <p>Ask Magic 8 Ball a question and see what answer it has in store for you!</p>
 
-<p>`using System;
+<pre><code>using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;</p>
+using System.Threading.Tasks;
 
-<p>namespace ClassRandom8BallExcercise
+namespace ClassRandom8BallExcercise
 {
     class Program
     {
@@ -36,16 +36,15 @@ using System.Threading.Tasks;</p>
             Console.WriteLine("Eneter a question for Magic 8 Ball");
             string userReply = Console.ReadLine();
             Random rnd = new Random(); // instanciating a new object
-            string[] m8 = { "Outlook good", "without a doubt","yes","no","Dont count on it", "Really hazy, try again", "Things looking good","blue skys" };
+            string[] m8 = { "Outlook good", "without a doubt","yes","no","Dont count on it", "Really hazy, try again",      "Things looking good","blue skys" };
             int m8index = rnd.Next(0, m8.Length); // rnd.Next what randomizes our string , "0" first position in index, ".length" goes through entire lenght of array
-            Console.WriteLine(m8[m8index]);//tell to pring our string of words randomized.
+             Console.WriteLine(m8[m8index]);//tell to pring our string of words randomized.
             Console.ReadLine();
-        }</p>
+        }
 
-<pre><code>}
+     }
+}`
 </code></pre>
-
-<p>}`</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/Tenecia/Week7">Magic 8 Ball</a> is maintained by <a href="https://github.com/Tenecia">Tenecia</a>.</span>
